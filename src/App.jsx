@@ -15,8 +15,8 @@ function App() {
   return (
     <div className="App">
       <main className="main">
-        <h1 className="heading">PX to REM</h1>
-        Hello this is test PR
+        <h1 className="heading">PX - REM</h1>
+        <h2>CONVERTOR</h2>
         <div className="input-wrapper">
           <input
             type="number"

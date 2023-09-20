@@ -4,21 +4,48 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(assets/pexels-dlkr-5676478.jpg);
+  background-size: cover;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adding transparency to the background */
+  font-size: 1rem; /* Setting a base font size for rem units */
 }
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem; /* Adding padding for better spacing */
 }
+
 .input-wrapper {
   display: flex;
-  column-gap: 2rem;
+  flex-direction: column; /* Adjusting input wrapper layout for responsiveness */
+  row-gap: 1rem; /* Adding vertical spacing between inputs */
 }
+
 .input {
-  width: 150px;
+  width: 10rem; /* Adjusting the width to be responsive */
   text-align: center;
   padding: 1rem;
-  font-size: 2rem;
+  font-size: 1.5rem; /* Increasing font size for better readability */
   border: 2px solid #000;
   border-radius: 10px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* Adding transparency to the input background */
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .input {
+    width: 100%; /* Full width on smaller screens */
+  }
 }
