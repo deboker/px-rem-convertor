@@ -1,6 +1,6 @@
 .App {
   height: 100vh;
-  width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,25 +12,29 @@
     0,
     0.6
   ); /* Adding transparency to the background */
-  font-size: 1rem; /* Setting a base font size for rem units */
+  font-size: 1.6rem; /* Setting a base font size for rem units */
 }
 
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 2rem; /* Adding padding for better spacing */
+  padding: 0; /* Adding padding for better spacing */
 }
 
 .input-wrapper {
   display: flex;
+  width: auto;
+  flex-wrap: wrap;
   flex-direction: column; /* Adjusting input wrapper layout for responsiveness */
-  row-gap: 1rem; /* Adding vertical spacing between inputs */
+  row-gap: 2rem; /* Adding vertical spacing between inputs */
 }
 
 .input {
-  width: 10rem; /* Adjusting the width to be responsive */
+  width: 100%; /* Adjusting the width to be responsive */
   text-align: center;
+  align-items: center;
+
   padding: 1rem;
   font-size: 1.5rem; /* Increasing font size for better readability */
   border: 2px solid #000;
